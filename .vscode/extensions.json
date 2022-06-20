@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "aaron-bond.better-comments",
+    "streetsidesoftware.code-spell-checker",
+    "GitHub.copilot",
+    "christian-kohler.path-intellisense",
+    "emmanuelbeziat.vscode-great-icons",
+    "mike-co.import-sorter"
+  ]
+}

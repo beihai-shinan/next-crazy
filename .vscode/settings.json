@@ -1,0 +1,25 @@
+{
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "GitHub Dark Dimmed",
+  "files.associations": {
+    "*.json": "jsonc"
+  },
+  "workbench.iconTheme": "vscode-great-icons",
+  "editor.fontFamily": "JetBrains Mono,JetBrainsMono-Thin, Cascadia Code, Consolas, 'Courier New', monospace",
+  "editor.fontWeight": "normal",
+  "cSpell.userWords": [
+    "Weee",
+    "idcard"
+  ],
+  "editor.inlineSuggest.enabled": true,
+  "files.eol": "auto",
+  "window.zoomLevel": 1,
+  "editor.unicodeHighlight.allowedCharacters": {
+    " ": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "editor.formatOnSave": true,
+}

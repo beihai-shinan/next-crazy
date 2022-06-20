@@ -1,3 +1,13 @@
+
+## 请注意以下几点
+
+- 请使用`pnpm`安装依赖,不要使用其他的
+- 请不要添加`css`文件,一律使用 `css-in-js`
+- 请安装`vscode插件`,项目中有配置推荐的插件集合,保持风格统一
+- 文件夹或者是文件命名请一律使用中划线连接
+- 请在新增代码或者改动代码请更新或者添加必要的注释
+- 请多使用`ts`类型
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

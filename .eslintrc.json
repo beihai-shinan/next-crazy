@@ -4,17 +4,20 @@
     "es2021": true,
     "node": true
   },
-  "plugins": ["@typescript-eslint"],
   "extends": [
-    "eslint:recommended",
-    "next",
-    "next/core-web-vitals",
-    "plugin:@typescript-eslint/recommended"
+    "next", 
+    "prettier"
   ],
   "rules": {
-    "no-unused-vars": "warn",
-    "no-console": "warn",
-    "@typescript-eslint/explicit-module-boundary-types": "off"
+    "no-unused-vars": "off",
+    "no-console": "off",
+    "no-debugger": "error",
+    "no-trailing-spaces": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "no-constant-condition": "off",
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off"
   },
   "globals": {
     "React": true,

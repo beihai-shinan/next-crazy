@@ -1,9 +1,11 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import Image from 'next/image';
 
-const Home: NextPage = () => {
+import styles from '../styles/Home.module.css';
+
+const Home: NextPage = (props) => {
+  const { name } = props;
   return (
     <div className={styles.container}>
       <Head>

@@ -1,6 +1,6 @@
 {
   "editor.tabSize": 2,
-  "workbench.colorTheme": "GitHub Dark Dimmed",
+  "workbench.colorTheme": "SynthWave '84",
   "files.associations": {
     "*.json": "jsonc"
   },
@@ -15,4 +15,5 @@
     "source.fixAll.stylelint": true
   },
   "editor.formatOnSave": true,
+  "cSpell.words": ["ahooks"]
 }

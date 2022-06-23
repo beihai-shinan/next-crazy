@@ -7,23 +7,31 @@
     "email": "384840951@qq.com"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 2999",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install"
   },
   "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.5",
+    "@mui/styled-engine-sc": "^5.8.0",
+    "ahooks": "^3.5.0",
+    "dayjs": "^1.11.3",
     "next": "12.1.6",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^17.0.2",
     "@types/node": "18.0.0",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
-    "@commitlint/cli": "^13.1.0",
     "eslint": "^7.32.0",
     "eslint-config-next": "^11.1.0",
     "eslint-config-prettier": "^8.5.0",
@@ -31,7 +39,7 @@
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
     "next-sitemap": "^1.6.164",
-    "prettier": "^2.3.0",
+    "prettier": "^2.7.1",
     "typescript": "4.7.4"
   }
 }

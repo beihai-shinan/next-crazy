@@ -1,6 +1,6 @@
 {
   "editor.tabSize": 2,
-  "workbench.colorTheme": "SynthWave '84",
+  "workbench.colorTheme": "GitHub Dark Dimmed",
   "files.associations": {
     "*.json": "jsonc"
   },
@@ -14,6 +14,13 @@
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
   },
+  "terminal.integrated.profiles.windows": {
+    "PShell": {
+      "path": "D:\\ProgramFiles\\Git\\bin\\bash.exe",
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "PShell",
+  // "terminal.integrated.shell.windows": "D:\\ProgramFiles\\Git\\bin\\bash.exe",
   "editor.formatOnSave": true,
   "cSpell.words": ["ahooks"]
 }

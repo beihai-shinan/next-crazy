@@ -1,14 +1,24 @@
+// import { useTranslation } from 'next-i18next';
+// import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
-import { List, ListItem, ListItemText } from '@mui/material';
+// import imgLogo from '~/assets/images/points-bg.png';
+import { CssBaseline, List, ListItem, ListItemText } from '@mui/material';
+import Tracker from '~/shared/track';
 
 import styles from '../styles/Home.module.css';
 
-import type { NextPage } from 'next'
-const Home: NextPage = (props) => {
+import type { NextPage } from 'next';
+
+const Home: NextPage = props => {
+  const router = useRouter();
+  const str = `$${router.asPath}`;
+  const token =
+    'color/surface/1/fg/default/idle txt/us-en/fluid-root/card-label-base bg/surface/1/fg/default/idle';
 
   return (
     <div className={styles.container}>
@@ -18,28 +28,21 @@ const Home: NextPage = (props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <List>
-          <ListItem>
-            <Link href="/render-mode/csr">GO CSR PAGE</Link>
-          </ListItem>
-        </List>
-      </main>
+      <span agToken={token}></span>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <div
+        agToken="color/blue/spectrum/15 txt/us-en/fluid-root/utility-sm "
+        className="bg-red-100 text-blue-500">
+        color/surface/1/fg/default/idle
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export const getStaticProps = async ({ locale }: any) => ({
+  props: {
+    // ...await serverSideTranslations(locale, ['common', 'footer']),
+  }
+});
+
+export default Home;

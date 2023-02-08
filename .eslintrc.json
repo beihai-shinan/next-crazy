@@ -12,12 +12,13 @@
     "no-unused-vars": "off",
     "no-console": "off",
     "no-debugger": "error",
-    "no-trailing-spaces": "error",
+    "no-trailing-spaces": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-unused-vars": "off",
     "no-constant-condition": "off",
     "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off"
+    "@next/next/no-page-custom-font": "off",
+    "react-hooks/exhaustive-deps": "off"
   },
   "globals": {
     "React": true,

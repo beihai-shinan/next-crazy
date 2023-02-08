@@ -1,46 +1,27 @@
-import '../styles/globals.css';
-import '~/assets/fonts/iconfont.css';
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
-import Tracker from '../shared/track';
-import Script from 'next/script';
 import Head from 'next/head';
-// import { appWithTranslation } from 'next-i18next';
-
-import type { AppProps } from 'next/app';
-function MyApp({ Component, pageProps }: AppProps) {
+import Script from 'next/script';
+const HotjarDemo = () => {
   return (
     <>
-      <Head>
-        {/* <link rel="stylesheet" href="/enki/styles/enki-common.css" /> */}
-      </Head>
-      <Script
-        onLoad={() => {
-          console.log('onLoad22');
-        }}
-        id="scriptAfterInteractive"
-        src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
-      />
-      <Script
-        strategy="beforeInteractive"
-        onLoad={() => {
-          console.log('onLoad');
-        }}
-        dangerouslySetInnerHTML={{
-          __html: `
+      {/* <Head>
+        <Script
+          type="javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
         function getCookieInGtm(name) {
           var value = '; '+ document.cookie;
           var parts = value.split('; '+name+'=');
           if (parts.length === 2) return parts.pop().split(';').shift();
         }
-        
         console.log('[hotjar-recording]2222')
+
+      try {
         window.__hotjarInitCallback = function () {
           if (window.__isHotjarInitialized) {
             return
           }
   
-          var hotjarStartDelay = 1000; // 8s
+          var hotjarStartDelay = 8000; // 8s
           var hotjarTrackPercentageLimit = 0.02; // 2%
           var recordingPercentage = Math.random();
   
@@ -58,7 +39,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           console.log('[hotjar-recording] HOTJAR INITIALIZED!')
   
           setTimeout(function() {
-            console.log('[hotjar-recording] HOTJAR STARTED!')
             try {
               if (window.__isHotjarInitialized) {
                 return
@@ -93,19 +73,21 @@ function MyApp({ Component, pageProps }: AppProps) {
             }
           }, hotjarStartDelay);
         }
-        window.onload = function () {
-          console.log('[hotjar-recording] window.onload')
-        }
-        document.addEventListener('DOMContentLoaded', () => {
+        window.addEventListener('DOMContentLoaded', () => {
           console.log('[hotjar-recording] DOMContentLoaded')
           window.__hotjarInitCallback();
         });
-
+      } catch (e) {
+        console.error("[hotjar] setup failure:", e)
+      }
         `
-        }}></Script>
-      <Component {...pageProps} />
+          }}></Script>
+      </Head> */}
+      <div>
+        <div>sadfasdf</div>
+      </div>
     </>
   );
-}
+};
 
-export default MyApp;
+export default HotjarDemo;

@@ -18,13 +18,13 @@ export default function DefaultLayout (props: PropsWithChildren<ILayout>) {
   return (
     <Container>
       <Grid container spacing={2}>
-        <Grid item>
+        <Grid item sx={{display:"flex", alignItems:"center"}}>
           <Button onClick={onBack} variant="outlined" startIcon={<TurnLeftIcon />}>
             BACK
           </Button>
         </Grid>
         <Grid item xs={6}>
-          <Alert severity="info">
+          <Alert severity="info" sx={{textAlign:"center"}}>
             <RealTimeSection />
           </Alert>
         </Grid>

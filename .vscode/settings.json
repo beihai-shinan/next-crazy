@@ -1,8 +1,9 @@
 {
   "editor.tabSize": 2,
-  "workbench.colorTheme": "GitHub Dark Dimmed",
+  "workbench.colorTheme": "SynthWave '84",
   "files.associations": {
-    "*.json": "jsonc"
+    "*.json": "jsonc",
+    "*.css": "tailwindcss",
   },
   "workbench.iconTheme": "vscode-great-icons",
   "editor.fontFamily": "JetBrains Mono,JetBrainsMono-Thin, Cascadia Code, Consolas, 'Courier New', monospace",
@@ -10,17 +11,21 @@
   "editor.inlineSuggest.enabled": true,
   "files.eol": "auto",
   "window.zoomLevel": 1,
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "on"
+  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
   },
   "terminal.integrated.profiles.windows": {
     "PShell": {
-      "path": "D:\\ProgramFiles\\Git\\bin\\bash.exe",
+      "path": "D:\\ProgramFiles\\Git\\bin\\bash.exe"
     }
   },
   "terminal.integrated.defaultProfile.windows": "PShell",
-  // "terminal.integrated.shell.windows": "D:\\ProgramFiles\\Git\\bin\\bash.exe",
   "editor.formatOnSave": true,
   "cSpell.words": ["ahooks"]
 }
